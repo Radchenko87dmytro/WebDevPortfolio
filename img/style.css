@@ -1,0 +1,141 @@
+body{
+	font-family: 'Raleway', sans-serif; 
+}
+
+a{
+	text-decoration: none;
+}
+
+button{
+	 color: #fff;
+	 background-color: #e38f42;
+	 align-items: center;
+}
+input{
+	padding-left: 20px;
+	color: #888;
+	border-radius: 5px;
+}
+textarea{
+	margin: 5px 0px 5px 0px;
+	padding: 15px 15px;
+	border-radius: 5px;
+}
+
+.header {
+	padding: 20px 0px 20px 0px;
+	background-color: rgba(0, 0, 0, 0.35);
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+#link_2{
+	padding: 0px 0px 0px 300px;
+}
+
+#link_3{
+	padding: 0px 220px 0px 0px; 
+}
+
+.header_textlink {
+	padding: 0px 0px 0px 300px;/**/
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+}
+
+.header_textlink:hover{
+		color: #e38f42;
+	}
+
+
+
+.grid{
+	background: url("climbing-gffc6b7ebf_640.jpg");
+	background-size: cover;
+	height: 80vh;
+	display: grid;
+	grid-template-columns: 45% 55%;
+}
+
+.grid-bg{
+	background-color: rgba(0, 0, 0, 0.8);
+	color:  #fff;
+	padding: 15px 0px 20px 35px 
+}
+
+.main-icon {
+    font-size: 50px;
+    color: whitesmoke;
+	padding-left: 90px;	
+}
+
+.grid-section-meniu{
+	padding: 100px 40px 50px 100px;
+}
+
+.grid-section_formular{
+	padding: 20px 20px 30px 20px;
+	display: grid;
+	grid-template-rows: 50px 50px 50px 90px 60px;
+	grid-gap: 12px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;	
+}
+
+#header{
+	font-size: 36px;
+	color: #fff;
+	display: inline-block;
+}
+#header_2{
+	font-size: 18px;
+	color: #c2c2c2;
+}
+.formular_item {
+	display: grid;
+	font-size: 15px;
+	border-radius: 10px;
+}
+.grid-white_color {
+	text-indent: 30px;
+	color: #c2c2c2;
+}
+
+.yellow{
+	color: #e38f42;
+}
+
+.grid-section_text {
+	color: #fff;
+	text-align: center;
+}
+
+.grid_section_text_heder {
+	font-size: 36px;
+	font-weight: bold;
+	padding-top: 35%;
+}
+
+.section_text_main {
+	font-size: 18px;
+	padding: 30px 0px 30px 0px;
+	color: #c2c2c2;
+}
+
+	
+.section_textbutton{
+	padding: 10px 20px 10px 20px;
+	border-radius: 5px;
+	margin: 0px 2px
+}
+
+#button_2{
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #c2c2c2;   
+}
+
+
+
+
+
