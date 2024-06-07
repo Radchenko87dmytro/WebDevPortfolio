@@ -6,6 +6,7 @@
 
 .body {
   font-family: "Poppins", sans-serif;
+  height: auto;
 }
 
 .header {
@@ -39,6 +40,12 @@
   text-decoration: underline;
   text-underline-offset: 1rem;
 }
+.navbar a:active {
+  color: rgb(236, 222, 17);
+  font-size: 30px;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
 
 .section-bg {
   background: url("img/Screenshot\ 2024-06-03\ 182628.jpg") no-repeat; /*center   */
@@ -52,6 +59,7 @@
   background-color: slateblue;
   border-radius: 20px;
   padding: 10vh 15vh;
+  width: auto;
 }
 .section-info {
   color: white;
@@ -61,19 +69,48 @@
   font-size: 30px;
 }
 
+.about {
+  padding-top: 30px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar-img {
+  border-radius: 50%;
+  width: 250px;
+  height: 200px;
+}
+
+.futer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: cadetblue;
+  padding: 30px;
+  width: 100%;
+}
+
+.svg-icons {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+}
 .contact {
   color: chartreuse;
   padding: 10px 28px;
-
   background-color: rgb(218, 228, 88);
   color: black;
-
   border: 5px solid transparent;
   border-radius: 8px;
   font-size: 20px;
-}
-a {
-  text-decoration: none;
 }
 .contact:hover {
   background-color: chartreuse;
@@ -84,59 +121,19 @@ a {
   background-color: rgb(136, 135, 143);
 }
 
-.section-avatar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.futer {
-}
-.futer-container {
-  display: flex;
-  justify-content: center;
-  background-color: cadetblue;
-  padding: 20px;
-  width: 100%;
-}
-
-img {
-  border-radius: 50%;
-  width: 250px;
-  height: 200px;
-}
-
-/* @media screen and (max-width: 1200px) {
-  .header {
-    flex-direction: column;
-  }
-  .section-grid {
-    flex-direction: column;
-  }
-  .name {
-    font-size: 30px;
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 600px) {
-  .home-content {
-    flex-direction: column;
-    background-size: 1rem;
-  }
-  .section-info {
-    flex-direction: column;
-    font-size: 20px;
-  }
-} */
-
 @media screen and (max-width: 1400px) {
 }
 
 @media screen and (max-width: 1200px) {
+  .section-grid {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  .section-grid {
+    display: block;
+  }
   .section-info {
     display: block;
     flex-direction: column;
@@ -148,6 +145,10 @@ img {
   }
   .header {
     flex-direction: column;
+    font-size: 10px;
+  }
+  .contact {
+    padding: 5px 10px;
     font-size: 10px;
   }
 }
