@@ -22,42 +22,27 @@
   <body class="body">
 
     <div class="header_container">
-      <i class="menu-icon fa-solid fa-bars"></i>
-      <ul class="header_items">
+      <i id="hamburger" class="fa-solid fa-bars"></i>
+      <ul class="header_items" id="headerItems">
         <li>
           <a href="#" class="header_link">Portfolio</a>
         </li>
         <li>
-          <a href="#html" class="header_link">Skills</a>
+          <a href="#skills" class="header_link">Skills</a>
         </li>
         <li>
-          <a href="#" class="header_link">Contact</a>
+          <a href="#footer" class="header_link">Contact</a>
         </li>
       </ul>
     </div>
 
-    
+    <div id="popover">
+      test
+    </div>
 
-    <!-- <header class="header">
-      
-      <a href="#">Portfolio</a>
-      <a href="#skills">Skills</a>
-
-      <select name="skills" id="" placeholder="Skills">
-				<option value="">Skills</option>
-				<option value="" >HTML</option>
-				<option value="">CSS</option>
-				<option value="">JS</option>
-        <option value="">React</option>
-        <option value="">GitHub</option>
-        <option value="">GIT</option>
-			</select>
-
-      <a href="#contact">Contact</a>
-    </header> -->
 
     <section class="section">
-      <div class="section-grid">
+      <div class="section-flex">
         <div class="section-avatar">
           <img
             class="avatar-img"
@@ -74,13 +59,24 @@
     </section>
 
     <section id="skills" class="container">
-      <div class="container-item" id="html">
+
+
+
+      <div class="about-me" >
+        <h2 class=" ">
+          
+            Before that, I worked in the telecommunications company by technical department engineer. Last years I am interesting English language and the world of IT technology. I am also patient and communicative and I like working in a team. I have basic knowledge of HTML, CSS, JavaScript, React, Git
+          
+        </h2>
+      </div>
+
+      <div class="container-item">
         <h2 class="item-text">HTML</h2>
         <div class="item-icon-container">
           <i class="item-icon fa-brands fa-html5"></i>
         </div>
       </div>
-
+      
       <div class="container-item">
         <h2 class="item-text">CSS</h2>
         <div class="item-icon-container">
@@ -116,14 +112,20 @@
         </div>
     </section>
 
-    <footer class="futer">
-      <div class="futer-container">
+    <footer class="footer" id="footer">
+      <div class="footer-container">
         <div class="svg-icons">
           <a href="">
             <i class="fa-brands fa-linkedin"></i>
           </a>
           <a href="">
             <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-phone"></i>
           </a>
         </div>
 
