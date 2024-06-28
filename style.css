@@ -39,6 +39,18 @@ a {
   transition: all 0.3s ease;
   text-decoration: none;
 }
+
+.header_items_min {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  list-style-type: none;
+  font-size: 15px;
+  padding: 0.2rem;
+}
+
 .header_link {
   color: white;
   margin: 0 1rem;
@@ -218,14 +230,14 @@ a {
 
 /* telefon */
 @media screen and (max-width: 767px) {
-  .header_items {
+  /* .header_items {
     display: flex;
     flex-direction: column;
     font-size: 2rem;
     justify-content: center;
     font-size: 15px;
     padding: 0.2rem;
-  }
+  } */
   .section {
     padding: 7rem;
     display: block;
@@ -274,6 +286,9 @@ a {
 
 @media screen and (min-width: 800px) {
   #hamburger {
+    display: none;
+  }
+  .header_items_min {
     display: none;
   }
 }
