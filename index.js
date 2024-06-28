@@ -22,16 +22,26 @@ const headerContainer = document.querySelector("#headerCont");
 
 hamburgerBtn.addEventListener("click", () => {
   //popover.style.display = "block";
-  headerItemsMin.classList.toggle("header_items_min");
-
+  headerItemsMin.classList.toggle("active");
+  //headerItems.classList.toggle("header_items");
   //headerItemsMin.style.display = "flex";
-  //headerItemsMin.style.display = "none";
+  //headerItems.style.display = "flex";
+  //headerItemsMin.style.display = "flex";
 
   //style.display = "flex";
   //headerContainer.style.display = "flex";
   //headerContainer.style.justifyContent = "flex-end";
 });
 
-popover.addEventListener("click", () => {
-  popover.style.display = "none";
-});
+// headerItemsMin.addEventListener("click", () => {
+//   headerItemsMin.style.display = "none";
+// });
+
+// overlay.addEventListener("click", () => {
+//   overlay.classList.toggle("header_items_min");
+//   headerItemsMin.style.display = "none";
+// });
+
+// popover.addEventListener("click", () => {
+//   popover.style.display = "none";
+// });
