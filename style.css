@@ -20,10 +20,13 @@ a {
   top: 0;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   margin: 0px auto;
   background-color: #e0933e;
-  padding: 1rem 0;
+  /* padding: 0.1em 0; */
+  /* padding-top: 0.5rem;
+  padding-bottom: 0.5rem; */
   z-index: 5;
 }
 .header_items {
@@ -47,10 +50,10 @@ a {
   justify-content: center;
   align-items: end;
   flex-direction: column;
-  font-size: 2rem;
+  font-size: 0.8rem;
   list-style-type: none;
   font-size: 15px;
-  padding: 1rem 2rem;
+  padding: 0.3em 2rem;
   margin-left: -40px;
 
   background-color: #925bf8;
@@ -66,7 +69,7 @@ a {
 .header_link {
   color: white;
   margin: 0 1rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 .header_items :hover {
   color: chartreuse;
@@ -96,7 +99,9 @@ a {
 .section {
   background: url("img/Screenshot\ 2024-06-13\ 012334.jpg") no-repeat; /*center   */
   background-size: cover;
-  padding: 15rem;
+  padding: 10rem;
+  height: 100%;
+  /* //padding top*/
 }
 .section-flex {
   display: flex;
@@ -227,6 +232,7 @@ a {
   border: 5px solid transparent;
   border-radius: 8px;
   font-size: 20px;
+  margin-right: 2rem;
 
   box-shadow: 4px 4px rgb(92, 89, 89);
 }
@@ -242,9 +248,26 @@ a {
   box-shadow: none;
 }
 
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 375px) {
   body {
-    width: 200px;
+    width: 375px;
+  }
+  .footer {
+    width: 375px;
+  }
+  /* .footer-container {
+    display: flex;
+    justify-content: center;
+  } */
+}
+
+@media screen and (max-width: 488px) {
+  /* .footer-container {
+    display: flex;
+    justify-content: center;
+  } */
+  .svg-icons a {
+    margin: 0 1rem;
   }
 }
 
@@ -269,8 +292,8 @@ a {
     font-size: 20px;
   }
   .avatar-img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
   .item-text {
     font-size: 1rem;
@@ -283,7 +306,7 @@ a {
     flex-direction: column;
   }
   .container-item {
-    width: 60%;
+    width: 80%;
   }
   .item-icon {
     font-size: 2rem;
@@ -325,16 +348,28 @@ a {
 
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .avatar-img {
+    width: 80px;
+    height: 80px;
+  }
+  .section {
+    padding: 12rem;
+  }
   /* .header_items {
     flex-direction: row;
   } */
 }
 
 /* desktop */
-@media screen and (max-width: 1200px) {
-  /* .header_items {
-    flex-direction: row;
-  } */
+@media screen and (min-width: 1200px) {
+  .section {
+    display: flex;
+
+    justify-content: center;
+  }
+  .section-flex {
+    width: 60%;
+  }
 }
 
 #popover {
