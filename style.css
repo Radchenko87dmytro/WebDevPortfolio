@@ -93,7 +93,7 @@ a {
 }
 
 .section {
-  background: url("img/Screenshot\ 2024-06-13\ 012334.jpg") no-repeat; /*center   */
+  background: url("img/Screenshot\ 2024-06-13\ 012334.jpg") no-repeat; /*center */
   background-size: cover;
   padding: 10rem;
   height: 100%;
@@ -112,7 +112,7 @@ a {
   text-align: center;
   justify-content: center;
   font-size: 30px;
-  /* text responsive styles*/
+  /*  text responsive styles */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -141,18 +141,17 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 40%;
+  width: 45%;
   background-color: #f1f1f1;
   border-radius: 20px;
   margin: 15px;
   padding: 20px;
-  font-size: 30px;
   box-shadow: 7px 7px rgb(92, 89, 89);
 }
 .item-text {
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  font-size: 24px;
   width: 50%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -160,12 +159,13 @@ a {
 }
 .about-me {
   display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
   width: 70%;
   color: white;
 
   /*using grid
-  color: white;  
+  color: white;
   display: grid;
   grid-template-columns: 50%; */
 
@@ -178,6 +178,12 @@ a {
   text-overflow: ellipsis;
   white-space: wrap;
 }
+
+.about-me-text {
+  font-size: 22px;
+  margin-bottom: 64px;
+}
+
 .item-icon-container {
   display: flex;
   justify-content: center;
@@ -253,6 +259,19 @@ a {
   box-shadow: none;
 }
 
+.links {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  background-color: cadetblue;
+}
+.links p {
+  margin-bottom: 20px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 375px) {
   body {
     width: 375px;
@@ -295,7 +314,7 @@ a {
     flex-direction: column;
   }
   .container-item {
-    width: 80%;
+    width: 65%;
   }
   .item-icon {
     font-size: 2rem;
@@ -318,6 +337,9 @@ a {
   }
   .contact:hover {
     font-size: 1rem;
+  }
+  .links p {
+    font-size: 15px;
   }
 }
 
@@ -361,4 +383,8 @@ a {
   .section-flex {
     width: 60%;
   }
+}
+
+svg {
+  fill: orange;
 }
