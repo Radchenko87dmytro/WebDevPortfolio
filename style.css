@@ -52,7 +52,7 @@ a {
   font-size: 15px;
   padding: 0.3em 2rem;
   background-color: #925bf8;
-  box-shadow: 7px 7px rgb(104, 100, 100);
+  box-shadow: 7px 7px rgb(104, 100, 100), -7px 7px rgb(104, 100, 100);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   width: 70%;
@@ -233,6 +233,10 @@ a {
 .svg-icons a {
   margin: 0 2rem;
 }
+
+.mail-phone-contact {
+  font-size: 1.5rem;
+}
 .svg-icons :hover {
   color: rgb(59, 19, 97);
 }
@@ -279,18 +283,34 @@ a {
   .footer {
     width: 375px;
   }
+  .svg-icons a {
+    margin: 0 0.1rem;
+  }
 }
 
 @media screen and (max-width: 488px) {
-  .svg-icons a {
-    margin: 0 1rem;
+  /* .svg-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } */
+  /* .mail-phone_container {
+    flex-direction: column;
+  } */
+
+  .footer-container {
+    flex-direction: column;
+  }
+  .contact {
+    margin-top: 20px;
   }
 }
 
 /* telefon */
 @media screen and (max-width: 767px) {
   .section {
-    padding: 5rem;
+    padding: 4rem;
     display: block;
     flex-direction: column;
   }
@@ -300,8 +320,8 @@ a {
     font-size: 20px;
   }
   .avatar-img {
-    width: 80px;
-    height: 80px;
+    width: 130px;
+    height: 130px;
   }
   .item-text {
     font-size: 1rem;
@@ -331,6 +351,9 @@ a {
   .svg-icons {
     font-size: 1rem;
   }
+  .svg-icons a {
+    margin: 0 1rem;
+  }
   .contact {
     padding: 5px 10px;
     font-size: 10px;
@@ -339,6 +362,15 @@ a {
     font-size: 1rem;
   }
   .links p {
+    font-size: 10px;
+  }
+  .mail-phone-contact {
+    font-size: 10px;
+  }
+  .mail-phone_container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     font-size: 15px;
   }
 }
@@ -370,6 +402,17 @@ a {
   }
   .section {
     padding: 12rem;
+  }
+  .svg-icons {
+    font-size: 2rem;
+  }
+  .contact {
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+
+  .mail-phone-contact {
+    font-size: 15px;
   }
 }
 
